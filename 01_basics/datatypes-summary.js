@@ -36,9 +36,36 @@ const myFunction = function(){
     console.log("Hello World");
 }
 
-console.log(typeof heros); // object
-console.log(typeof myObj); // object
-console.log(typeof myFunction); // object function
+// console.log(typeof heros); // object
+// console.log(typeof myObj); // object
+// console.log(typeof myFunction); // object function
 
 
 
+//=================================================================
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+
+//Note: In stack we get copy but in heap we get the reference of original value
+
+let myYoutubename = "Afaq & Tazeem"
+
+let anothername = myYoutubename
+
+anothername = "Afaq Asif"
+
+// console.log(myYoutubename);
+// console.log(anothername);
+
+
+let user1 = {
+    email: "user@google.com",
+    nayapayy: "user@nayapay"
+}
+
+let user2 = user1;
+user1.email = "afaq@gmail.com"
+
+// console.log(user1.email);
+// console.log(user2.email);
