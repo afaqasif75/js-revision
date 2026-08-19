@@ -13,7 +13,9 @@ const jsUser = {
     location: "Rawalpindi",
     email: "afaq@google.com",
     isLoggedIn: false,
-    lastLoginDays: ["Monday", "Saturday"]
+    lastLoginDays: ["Monday", "Saturday"],
+    greeting: function(){console.log("Hello Js User");},
+    greetingTwo: function(){console.log(`Hello, ${this.name}`);}
 }
 
 // console.log(jsUser.email);
@@ -22,6 +24,17 @@ const jsUser = {
 // console.log(jsUser[mySym]);
 
 jsUser.email = 'afaq@chatgpt.com'
-Object.freeze(jsUser)
+// Object.freeze(jsUser)
 jsUser.email = 'afaq@microsoft.com'
-console.log(jsUser);
+// console.log(jsUser);
+
+jsUser.greetingThree = function(){
+    console.log(`I am defined outside the object parentheseis. And I know your full name is ${this["full name"]}`);
+    
+}
+
+// console.log(jsUser.greeting)
+// console.log(jsUser.greeting());
+// console.log(jsUser.greetingTwo());
+// console.log(jsUser.greetingThree());
+

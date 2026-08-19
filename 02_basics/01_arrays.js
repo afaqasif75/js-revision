@@ -29,7 +29,8 @@ const myArr2 = new Array(1,2,3,4)
 // console.log(typeof newArr);
 
 //Slice, Splice
-
+// Slice give a new array and last limit is not included
+// Splice changes the original array and last limit is included
 
 console.log("A ", myArr);
 
