@@ -55,6 +55,43 @@ users[1].email
 // console.log(Object.values(tinderUser));
 // console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // true
-console.log(tinderUser.hasOwnProperty('id')); // true
-console.log(tinderUser.hasOwnProperty('email')); // false
+// console.log(tinderUser.hasOwnProperty('isLoggedIn'));  // true
+// console.log(tinderUser.hasOwnProperty('id')); // true
+// console.log(tinderUser.hasOwnProperty('email')); // false
+
+//object destructuring
+const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "hitesh" 
+}
+
+//course.courseInstructor
+
+const {courseInstructor: instructor} = course
+console.log(instructor);
+
+// const navbar = ({company}) =>{
+
+// }
+
+// navbar(company = "Youtube")  
+// This is an example of object destructuring in Reactjs
+
+
+// --------------------------API-------------------------------
+// API : apna kaam kisi aur pe daal dena API ko kehty :P
+// restaurant jana hai tou apny bs order krna hai baki kaam woh dekhaingy
+
+// This is JSON(JavaScript Object Notation) format its like object with both key-value as string datatype
+// {
+//     "name": "Afaq",
+//     "courseName": "js in hindi",
+//     "price": "free"
+// }
+
+[
+    {},
+    {},
+    {}
+]
